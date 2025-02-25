@@ -1,0 +1,12 @@
+FROM httpd:latest
+
+LABEL author="shashank"
+LABEL purpose="test"
+
+RUN apt-get update -y
+
+WORKDIR /usr/local/apache2/htdocs
+COPY index.html /usr/local/apache2/htdocs/
+
+# Here we are using COPY to copy file from local machine to our container.
+# NOTE :- When you are running "docker build" command you should be in the same location where index.html is present.
