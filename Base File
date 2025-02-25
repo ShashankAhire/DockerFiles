@@ -1,0 +1,11 @@
+# This is Base Docker file
+
+FROM ubuntu:latest
+
+LABEL author=shashank
+LABEL purpose=test
+
+RUN apt-get update -y
+
+# To build image from this -> docker build -t <image name>:version .
+# To create Container -> docker run -it --name <container name> <imagename>:<version> /bin/bash
