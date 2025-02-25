@@ -1,0 +1,10 @@
+FROM ubuntu:latest
+
+LABEL author=shashank
+LABEL purpose=test
+
+CMD ["echo" , "Hello World..!"] 
+
+
+# In this file using CMD you can run command at the time of Container creation
+# NOTE : use only -> docker run <image name>:<version>
