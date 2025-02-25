@@ -1,0 +1,10 @@
+FROM python:latest
+
+LABEL author="shashank"
+LABEL purpose="test"
+
+RUN apt-get update -y ;\
+    apt-get install pip -y ;\
+    apt-get install wget -y ;\
+    apt-get install curl -y
+
