@@ -1,0 +1,12 @@
+FROM ubuntu:latest
+
+LABEL author="shashank"
+LABEL purpose="test"
+
+RUN apt-get update -y ;\
+    apt-get install git -y ;\
+    mkdir /app
+
+WORKDIR /app
+
+# workdir is used to set where user should land after logging into container
