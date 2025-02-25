@@ -10,3 +10,4 @@ COPY index.html /usr/local/apache2/htdocs/
 
 # Here we are using COPY to copy file from local machine to our container.
 # NOTE :- When you are running "docker build" command you should be in the same location where index.html is present.
+# Dont forget "port mapping" like this ->  docker run -itd --name c12 -p 1000:80 httpd:v8.0
