@@ -1,0 +1,12 @@
+FROM httpd:latest
+
+LABEL author="shashank"
+LABEL purpose="test"
+
+RUN apt-get update -y
+
+WORKDIR /usr/local/apache2/htdocs
+ADD https://sk1402.s3.ap-south-1.amazonaws.com/index.html /usr/local/apache2/htdocs/
+
+# ADD is also same as "COPY" but it extend fuctionality so u can copy content from URL as well
+# Here we are able to copying file from S3 bucket using "ADD"
