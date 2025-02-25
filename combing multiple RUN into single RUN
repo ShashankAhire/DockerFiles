@@ -7,4 +7,5 @@ RUN apt-get update -y ;\
     apt-get install pip -y ;\
     apt-get install wget -y ;\
     apt-get install curl -y
-
+# You can also use 
+# RUN apt-get update -y && apt-get install pip -y && apt-get install wget -y && apt-get install curl -y
