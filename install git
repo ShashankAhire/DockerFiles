@@ -1,0 +1,10 @@
+# Here we are installing git using run command 
+FROM ubuntu:latest
+
+LABEL author=shashank
+LABEL purpose=test
+
+RUN apt-get update -y
+RUN apt-get install git -y
+
+# To test -> git --version OR which git 
